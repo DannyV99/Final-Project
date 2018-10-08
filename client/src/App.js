@@ -4,19 +4,23 @@ import Books from "./pages/Books";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import Paragraph from "./components/Paragraph";
 
 const App = () => (
-  <Router>
-    <div>
-      <Nav />
-      <Switch>
-        <Route exact path="/" component={Books} />
-        <Route exact path="/books" component={Books} />
-        <Route exact path="/books/:id" component={Detail} />
-        <Route component={NoMatch} />
-      </Switch>
-    </div>
-  </Router>
+    <Router>
+        <div>
+            <Nav />
+            <Paragraph>
+                Lots of creepy text will go here
+        </Paragraph>
+            <Switch>
+                <Route exact path="/" component={Books} />
+                <Route exact path="/books" component={Books} />
+                <Route exact path="/books/:id" component={Detail} />
+                <Route component={NoMatch} />
+            </Switch>
+        </div>
+    </Router>
 );
 
 export default App;
