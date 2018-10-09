@@ -6,23 +6,19 @@ import ItemList from "./components/ItemList";
 import Paragraph from "./components/Paragraph"
 import Image from "./components/Image"
 import Nav from "./components/Nav"
-
+import Buttons from "./components/Buttons"
 const App = () => (
   <div>
     <Nav>
       Escape from Chicago
     </Nav>
-    {/* <Wrapper> */}
-    {/* <Main> */}
     <Image />
     {<ItemList />}
     {/* <SurvivorList /> */}
     <Paragraph>
       hello
-      </Paragraph>
-    {/* <Buttons />  */}
-    {/* </Main> */}
-    {/* </Wrapper>  */}
+    </Paragraph>
+    <Buttons />
   </div>
 );
 
