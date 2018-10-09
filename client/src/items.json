@@ -2,7 +2,8 @@
     {
         "id": 1,
         "name": "Crowbar",
-        "img": "https://seiyria.com/gameicons-font/svg/crowbar.svg"
+        "img": "https://seiyria.com/gameicons-font/svg/crowbar.svg",
+        "desc": "This is a useful tool for entering and combat"
     },
     {
         "id": 2,
