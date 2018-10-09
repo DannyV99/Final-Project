@@ -1,8 +1,13 @@
 import React from "react";
 import "./List.css";
+import Tooltips from "../Tooltip"
 
 const ListItem = props => (
-    <li><img className="itemImg" alt={props.name} src={props.img} /></li>
+    <div>
+        <li><img className="itemImg" alt={props.name} src={props.img} /></li>
+        <Tooltips name={props.name} id={props.id} img={props.img} desc={props.desc} />
+    </div>
+
 );
 
 

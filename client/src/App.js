@@ -22,9 +22,12 @@ class App extends Component {
           {this.state.items.map(item => (
             <ListItem
               key={item.id}
+              id={item.id}
               name={item.name}
               img={item.img}
-            />))}
+              desc={item.desc}
+            />
+          ))}
         </ItemList>
         <Paragraph>
           hello
