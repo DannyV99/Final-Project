@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Crowbar",
+        "img": "https://seiyria.com/gameicons-font/svg/crowbar.svg"
+    },
+    {
+        "id": 2,
+        "name": "Food",
+        "img": "https://seiyria.com/gameicons-font/svg/crowbar.svg"
+    },
+    {
+        "id": 3,
+        "name": "FirstAid",
+        "img": "https://seiyria.com/gameicons-font/svg/crowbar.svg"
+    },
+    {
+        "id": 5,
+        "name": "Gun",
+        "img": "https://seiyria.com/gameicons-font/svg/crowbar.svg"
+    },
+    {
+        "id": 6,
+        "name": "Knife",
+        "img": "https://seiyria.com/gameicons-font/svg/switchblade.svg"
+    },
+    {
+        "id": 7,
+        "name": "Josephine",
+        "img": "https://seiyria.com/gameicons-font/svg/switchblade.svg"
+    },
+    {
+        "id": 8,
+        "name": "Rusty",
+        "img": "https://seiyria.com/gameicons-font/svg/switchblade.svg"
+    },
+    {
+        "id": 9,
+        "name": "Ginger",
+        "img": "https://seiyria.com/gameicons-font/svg/switchblade.svg"
+    }
+]

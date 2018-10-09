@@ -1,25 +1,39 @@
-import React from "react";
-// import Wrapper from "./pages/wrapper";
-// import Main from "./pages/main";
+import React, { Component } from "react";
 import ItemList from "./components/ItemList";
-// import SurvivorList from "./components/survivorList";
-import Paragraph from "./components/Paragraph"
-import Image from "./components/Image"
-import Nav from "./components/Nav"
-import Buttons from "./components/Buttons"
-const App = () => (
-  <div>
-    <Nav>
-      Escape from Chicago
+import ListItem from "./components/ItemList/ListItems";
+import Paragraph from "./components/Paragraph";
+import Image from "./components/Image";
+import Nav from "./components/Nav";
+import items from "./items.json";
+import Buttons from "./components/Buttons";
+class App extends Component {
+  state = {
+    items
+  }
+
+  render() {
+    return (
+      < div >
+        <Nav>
+          Escape from Chicago
     </Nav>
-    <Image />
-    {<ItemList />}
-    {/* <SurvivorList /> */}
-    <Paragraph>
-      hello
+        <Image />
+        <ItemList>
+          {this.state.items.map(item => (
+            <ListItem
+              key={item.id}
+              name={item.name}
+              img={item.img}
+            />))}
+        </ItemList>
+        <Paragraph>
+          hello
     </Paragraph>
-    <Buttons />
-  </div>
-);
+        <Buttons />
+      </div >
+    )
+  }
+
+};
 
 export default App;
