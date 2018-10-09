@@ -38,3 +38,15 @@ const pageSeed = [
     options: [["Walk Home",], ["Take the Bike",], ["Take the Bike",]]
   }
 ];
+
+db.Page
+  .deleteMany({})
+  .then(() => db.Page.collection.insertMany(pageSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
