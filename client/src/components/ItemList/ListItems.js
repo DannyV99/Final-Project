@@ -1,7 +1,8 @@
 import React from "react";
+import "./List.css";
 
 const ListItem = props => (
-    <li><img alt={props.name} src={props.img} /></li>
+    <li><img className="itemImg" alt={props.name} src={props.img} /></li>
 );
 
 
