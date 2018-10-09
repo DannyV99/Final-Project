@@ -30,5 +30,11 @@ const pageSeed = [
     imageURL: { type: String },
     paragraph: '“Yes I AM a doctor.  How can I help you?” The stranger is thrown aback but recovers. “You\'re a doctor. Oh thank God. My daughter is very sick. She needs medicine. You must come see her. She\'s not far away.” What do you do?',
     options: [["Go with the Stranger to help his daughter",], ["Go Find Your Family",]]
+  },
+  {
+    id: 4,
+    imageURL: { type: String },
+    paragraph: '“Once outside you encounter a nearly vacant parking lot.  All you can see is a car and a bicycle.  Both seemed to be abandoned.  You need to go home. You can walk, take the bike, or break into the car.  What do you do?',
+    options: [["Walk Home",], ["Take the Bike",], ["Take the Bike",]]
   }
 ];
