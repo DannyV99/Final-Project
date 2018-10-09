@@ -1,7 +1,7 @@
 import React from "react";
 // import Wrapper from "./pages/wrapper";
 // import Main from "./pages/main";
-// import ItemList from "./pages/itemList";
+import ItemList from "./components/ItemList";
 // import SurvivorList from "./components/survivorList";
 import Paragraph from "./components/Paragraph"
 import Image from "./components/Image"
@@ -15,7 +15,7 @@ const App = () => (
     {/* <Wrapper> */}
     {/* <Main> */}
     <Image />
-    {/* <ItemList /> */}
+    {<ItemList />}
     {/* <SurvivorList /> */}
     <Paragraph>
       hello
