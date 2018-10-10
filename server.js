@@ -2,7 +2,7 @@ const express = require("express");
 
 const mongoose = require("mongoose");
 const routes = require("./routes");
-const Page = require('./models/page.js')
+// const Page = require('./models/page.js')
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -21,6 +21,6 @@ mongoose.connect("mongodb://localhost/escapeChicagoDB", { useNewUrlParser: true 
 
 
 // Start the API server
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
