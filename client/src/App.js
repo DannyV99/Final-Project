@@ -5,17 +5,28 @@ import Paragraph from "./components/Paragraph";
 import Image from "./components/Image";
 import Nav from "./components/Nav";
 import items from "./items.json";
+import pagesmock from "./pagesmock.json";
 import Buttons from "./components/Buttons";
 class App extends Component {
   state = {
-    items
+    items,
+    pagesmock,
+    currentLocation: pagesmock[0]
+  }
+
+  handleLocationChange = id => {
+    const newLocation = this.state.pagesmock.filter(location => {
+      return id === location.id
+    })
+    console.log(newLocation);
+    this.setState({ currentLocation: newLocation[0] })
   }
 
   render() {
     return (
       < div >
         <Nav>
-          Escape from Chicago
+          Escape Chicago
     </Nav>
         <Image />
         <ItemList>
@@ -31,8 +42,16 @@ class App extends Component {
         </ItemList>
         <Paragraph>
           hello
-    </Paragraph>
-        <Buttons />
+      </Paragraph>
+        {console.log(this.state.currentLocation)}
+        {this.state.currentLocation.options.map(option => (
+          <Buttons
+            key={option[1]}
+            buttonText={option[0]}
+            handleLocationChange={() => this.handleLocationChange(option[1])}
+          />
+        ))
+        })}
       </div >
     )
   }

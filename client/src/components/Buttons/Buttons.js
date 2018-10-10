@@ -1,11 +1,12 @@
-import React from "react";
+import React, { component } from 'react';
+import API from "../../utils/API";
 
 const wellStyles = { maxWidth: 400, margin: '0 auto 10px' };
 
 const Buttons = props => (
     <div className="well" style={wellStyles}>
-        <button bsStyle="danger" bsSize="large" onClick={props.nextPage} block>
-            Block level button
+        <button bsStyle="danger" bsSize="large" onClick={props.handleLocationChange} block>
+            {props.buttonText}
         </button>
     </div>
 );
