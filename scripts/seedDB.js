@@ -35,7 +35,7 @@ const pageSeed = [
     _id: 4,
     imageURL: { type: String },
     paragraph: '“Once outside you encounter a nearly vacant parking lot.  All you can see is a car and a bicycle.  Both seemed to be abandoned.  You need to go home. You can walk, take the bike, or break into the car.  What do you do?',
-    options: [["Walk Home",], ["Take the Bike",], ["Take the Bike",]]
+    options: [["Walk Home",], ["Take the Bike",], ["Steal the Car",]]
   }
 ];
 
