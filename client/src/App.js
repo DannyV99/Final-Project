@@ -7,6 +7,8 @@ import Nav from "./components/Nav";
 import items from "./items.json";
 import pagesmock from "./pagesmock.json";
 import Buttons from "./components/Buttons";
+import img from "./components/Image/image.jpg";
+
 
 class App extends Component {
   state = {
@@ -29,7 +31,7 @@ class App extends Component {
         <Nav>
           Escape Chicago
     </Nav>
-        <Image />
+        <Image img={img}/>
         <ItemList>
           {this.state.items.map(item => (
             <ListItem
