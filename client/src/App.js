@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from 'axios';
 import ItemList from "./components/ItemList";
 import ListItem from "./components/ItemList/ListItems";
 import Paragraph from "./components/Paragraph";
@@ -25,13 +26,21 @@ class App extends Component {
     this.setState({ currentLocation: newLocation[0] })
   }
 
+  componentDidMount() {
+    axios.get('api/page')
+      .then(res => {
+        this.setState({ currentLocation: res.id })
+        console.log(this.state.currentLocation);
+      });
+  }
+
   render() {
     return (
       < div >
         <Nav>
           Escape Chicago
     </Nav>
-        <Image img={img}/>
+        <Image img={img} />
         <ItemList>
           {this.state.items.map(item => (
             <ListItem
