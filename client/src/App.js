@@ -7,6 +7,7 @@ import Nav from "./components/Nav";
 import items from "./items.json";
 import pagesmock from "./pagesmock.json";
 import Buttons from "./components/Buttons";
+
 class App extends Component {
   state = {
     items,
