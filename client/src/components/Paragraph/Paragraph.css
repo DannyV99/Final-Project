@@ -1,8 +1,9 @@
 .paragraph {
-    width: 100%;
+    width: 50%;
     text-align: center;
-    font-size: 3rem;
-    color: black;
-    margin-bottom: 50px;
+    font-size: 1.5rem;
+    color: rgb(243, 31, 31);
+    /* margin-bottom: 50px; */
     font-family: 'Permanent Marker', cursive;
+    float: right;
   }
