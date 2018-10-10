@@ -2,10 +2,10 @@ const db = require("../models");
 
 // console.log(db);
 module.exports = {
-  findById: function (req, res) {
+  findAll: function (req, res) {
     console.log("hello")
     db.Page
-      .findById(req.params.id)
+      .find(req.query)
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },

@@ -6,6 +6,7 @@ import Paragraph from "./components/Paragraph";
 import Image from "./components/Image";
 import Nav from "./components/Nav";
 import items from "./items.json";
+import API from "./utils/API";
 import pagesmock from "./pagesmock.json";
 import Buttons from "./components/Buttons";
 import img from "./components/Image/image.jpg";
@@ -27,7 +28,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('api/page')
+    API.getPage(0)
       .then(res => {
         this.setState({ currentLocation: res.id })
         console.log(this.state.currentLocation);

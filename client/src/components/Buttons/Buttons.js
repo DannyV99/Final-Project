@@ -1,5 +1,4 @@
 import React, { component } from 'react';
-import API from "../../utils/API";
 
 const wellStyles = { maxWidth: 400, margin: '0 auto 10px' };
 
