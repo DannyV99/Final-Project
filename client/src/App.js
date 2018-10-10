@@ -15,7 +15,6 @@ class App extends Component {
     items,
     pagesmock,
     currentLocation: pagesmock[0],
-    paragraph
   }
 
   handleLocationChange = id => {
