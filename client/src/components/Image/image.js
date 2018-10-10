@@ -1,6 +1,6 @@
 import React from "react";
-import "./image.jpg"
+import image from "./image.jpg"
 
-const Image = props => <p className="image">{props.image}</p>;
+const Image = props => (<img src={image}></img>);
 
 export default Image;
