@@ -2,15 +2,7 @@
   "name": "mern",
   "version": "0.1.0",
   "private": true,
-<<<<<<< HEAD
   "proxy": "https://localhost:3000/",
-=======
-  "proxy": {
-    "/api/*": {
-      "target": "https://localhost:3001/"
-    }
-  },
->>>>>>> b009607898fde2faea747e4846d5b2b18073d796
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
