@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "proxy": {
-    "/api/*": "https://localhost:3001/"
+    "/api/*": {
+      "target": "https://localhost:3001/"
+    }
   },
   "dependencies": {
     "react": "^16.0.0",
