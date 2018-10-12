@@ -6,7 +6,6 @@ import Paragraph from "./components/Paragraph";
 import Image from "./components/Image";
 import Nav from "./components/Nav";
 import items from "./items.json";
-import API from "./utils/API";
 import pagesmock from "./pagesmock.json";
 import Buttons from "./components/Buttons";
 import img from "./components/Image/image.jpg";
@@ -16,7 +15,7 @@ class App extends Component {
   state = {
     items,
     pagesmock,
-    currentLocation: {},
+    currentLocation: pagesmock[0],
   }
 
   handleLocationChange = id => {
@@ -28,11 +27,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    API.getPage(0)
+    axios.get('api/page')
       .then(res => {
-        console.log("response", res);
-        this.setState({ currentLocation: res.data[0] })
-        console.log(res.data[0]);
+        this.setState({ currentLocation: pagesmock[0] })
+        console.log(this.state.currentLocation);
       });
   }
 
@@ -43,6 +41,7 @@ class App extends Component {
           Escape Chicago
     </Nav>
         <Image img={img} />
+
         <Paragraph>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
       </Paragraph>
@@ -57,18 +56,17 @@ class App extends Component {
             />
           ))}
         </ItemList>
-        {this.state.currentLocation.options && this.state.currentLocation.options.map(option => {
-
-          // console.log(option);
-          return (
+        {console.log(this.state.currentLocation)}
+        {
+          this.state.currentLocation.options.map(option => (
             <Buttons
               key={option[1]}
-              buttonText={option}
+              buttonText={option[0]}
               handleLocationChange={() => this.handleLocationChange(option[1])}
             />
-          )
+          ))
         })
-        })}
+      }
       </div >
     )
   }

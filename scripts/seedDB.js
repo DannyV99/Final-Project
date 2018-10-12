@@ -16,7 +16,7 @@ const pageSeed = [
   {
     _id: 1,
     imageURL: { type: String },
-    paragraph: 'You choose to explore the hospital so you put on your clothes and proceed to venture down various hallways. You don\'t see anyone. All the rooms are empty. The nurses stations are abandoned and you cannot tell for how long. Even more perplexing is that there is no indication why everyone is gone. You drift into a room labeled pharmacy. The lock on the door has been broken. What must have been shelves full of medications have been ransacked. You notice a single remaining bottle of pills. It is marked as some sort of antibiotic.  You absent-mindedly put the pills in you pocket. From behind you, comes a voice. “Are you a doctor?” Then quickly he continues, “You\'re not a doctor. Who are you? Are you a patient?',
+    paragraph: 'You choose to explore the hospital so you put on your clothes and proceed to venture down various hallways. You don\'t see anyone. All the rooms are empty. The nurses stations are abandoned and you cannot tell for how long. Even more perplexing is that there is no indication why everyone is gone. You drift into a room labeled pharmacy. The lock on the door has been broken. What must have been shelves full of medications have been ransacked. You notice a single remaining bottle of pills. It is marked as some sort of antibiotic. You absent-mindedly put the pills in you pocket. From behind you, comes a voice. “Are you a doctor?” Then quickly he continues, “You\'re not a doctor. Who are you? Are you a patient?',
     options: [{ text: "Tell the Truth", id: "2" }, { text: "Lie to Him", id: "3" }]
   },
   {
@@ -28,72 +28,72 @@ const pageSeed = [
   {
     _id: 3,
     imageURL: { type: String },
-    paragraph: '“Yes I AM a doctor.  How can I help you?” The stranger is thrown aback but recovers. “You\'re a doctor. Oh thank God. My daughter is very sick. She needs medicine. You must come see her. She\'s not far away.” What do you do?',
+    paragraph: '“Yes I AM a doctor. How can I help you?” The stranger is thrown aback but recovers. “You\'re a doctor. Oh thank God. My daughter is very sick. She needs medicine. You must come see her. She\'s not far away.” What do you do?',
     options: [{ text: "Go with the Stranger to help his daughter", id: "4" }, { text: "Go Find Your Family", id: "5" }]
   },
   {
     _id: 4,
     imageURL: { type: String },
-    paragraph: 'You Go with the stranger to bring his daughter the antibiotics.  He says she\'s on the fourth floor. You follow him to the room.  The stranger becomes circumspect. “She\'s in there,” he says. “I don\'t like seeing her this ill.” You go into his daughter\'s hospital room.  His daughter is in the bed but she not breathing.  In fact, it\'s obvious that this girl has been dead for at least weeks. From behind you, you hear the stranger\'s voice. “You did it.  You killed her.”His voice is instant and clearly unstable. You turn to confront him and everything fades to black. You are dead. The End.',
+    paragraph: 'You Go with the stranger to bring his daughter the antibiotics. He says she\'s on the fourth floor. You follow him to the room. The stranger becomes circumspect. “She\'s in there,” he says. “I don\'t like seeing her this ill.” You go into his daughter\'s hospital room. His daughter is in the bed but she not breathing. In fact, it\'s obvious that this girl has been dead for at least weeks. From behind you, you hear the stranger\'s voice. “You did it. You killed her.” His voice is insistent and clearly unstable. You turn to confront him and everything fades to black. You are dead. The End.',
     options: [{ text: "Next" }]
   },
   {
     _id: 5,
     imageURL: { type: String },
-    paragraph: 'You try to explain that you have you own family to protct. The stranger is clearly becoming agitated. You try to explain but he\'s hearing none of it.  You say that you\'re really doctor; that is was a bad joke. “My daughter really IS in bad shape,” he says and pulls a small revolver out of his pocket.  He points the gun at you. He asks you are you going to help or not. You have no real choice at this point. The stranger pushes you down the hallway and to another floor of the hospital.  He leads you to a room.  “She\'s in there.”  The stranger urges you into the room with the barrel of his gun. When you get into the room you see the stranger\'s daughter.  She\'s already dead from some disease and has been dead for weeks.  You turn to face the stranger. His face now reveals that he is obviously insane.  He says, “She\'s dead; you killed her.”  The stranger shoots you more than enough times to kill you.  The End.',
+    paragraph: 'You try to explain that you have you own family to protct. The stranger is clearly becoming agitated. You try to explain but he\'s hearing none of it.  You say that you\'re really doctor; that is was a bad joke. “My daughter really IS in bad shape,” he says and pulls a small revolver out of his pocket. He points the gun at you. He asks you are you going to help or not. You have no real choice at this point. The stranger pushes you down the hallway and to another floor of the hospital. He leads you to a room. “She\'s in there.” The stranger urges you into the room with the barrel of his gun. When you get into the room you see the stranger\'s daughter. She\'s already dead from some disease and has been dead for weeks. You turn to face the stranger. His face now reveals that he is obviously insane. He says, “She\'s dead; you killed her.” The stranger shoots you more than enough times to kill you. The End.',
     options: [{ text: "Next" }]
   },
   // the go home story path
   {
     _id: 6,
     imageURL: { type: String },
-    paragraph: '“Once outside you encounter a nearly vacant parking lot.  All you can see is a car and a bicycle.  Both seemed to be abandoned.  You need to go home. You can walk, take the bike, or break into the car.  What do you do?',
-    options: [{ text: "Walk Home", id: "7" }, { text: "Take the Bike", id: "11" }], [{ text: "Steal the Car" }]
+    paragraph: '“Once outside you encounter a nearly vacant parking lot. All you can see is a car and a bicycle. Both seemed to be abandoned. You need to go home. You can walk, take the bike, or break into the car. What do you do?',
+    options: [{ text: "Walk Home", id: "7" }, { text: "Take the Bike", id: "11" }], [{ text: "Steal the Car", id: 12 }]
 },
   {
     _id: 7,
     imageURL: { type: String },
-    paragraph: 'You choose to walk home.  Even though the world\'s falling apart, you refuse to steal someone else\'s property. You are still don\'t understand what\'s going on but you head east and vaguely north towards your home. The further you walk, you still encounter no people.  You see a vacant corner store;  It\'s door is hanging open.  You go in.  There is  no shop keeper.  This store has been ransacked by looters.  All that\'s left are loose scrapes of paper and a half eaten sandwich.  What do you do?',
+    paragraph: 'You choose to walk home. Even though the world\'s falling apart, you refuse to steal someone else\'s property. You are still don\'t understand what\'s going on but you head east and vaguely north towards your home. The further you walk, you still encounter no people. You see a vacant corner store. It\'s door is hanging open. You go in. There is no shop keeper. This store has been ransacked by looters. All that\'s left are loose scrapes of paper and a half eaten sandwich.  What do you do?',
     options: [{ text: "Take the Sandwich", id: "8" }, { text: "Skip the Sandwich and Head Home", id: "8" }],
     item: "half-eaten sandwich"
   },
   {
     _id: 8,
     imageURL: { type: String },
-    paragraph: 'You leave the corner store and resume you journey home.  Sporadically you hear gunshots in the distance.  You mange to avoid several roving gangs of looters.  Eventually you run into a local hardware store.  You\'re not that far from home now.  It\'s door is standing open.  You look into the window and notice a large dark mass moving amongst the aisles.  It looks to be a massive wolf.  What do you do?',
+    paragraph: 'You leave the corner store and resume you journey home. Sporadically you hear gunshots in the distance. You mange to avoid several roving gangs of looters. Eventually you run into a local hardware store. You\'re not that far from home now. It\'s door is standing open. You look into the window and notice a large dark mass moving amongst the aisles. It looks to be a massive wolf. What do you do?',
     options: [{ text: "Confront the Wolf", id: "9" }, { text: "Lure the Wolf Away", id: "10" }, { text: "Continue Home", id: "20" }]
   },
   {
     _id: 9,
     imageURL: { type: String },
-    paragraph: 'You choose to confront the rabid, aggressive wolf.  That was a bad idea.  Your still weak from the coma and wolf viciously disembowels you.  The End.',
+    paragraph: 'You choose to confront the rabid, aggressive wolf. That was a bad idea. Your still weak from the coma and wolf viciously disembowels you. The End.',
     options: [{ text: "Next" }]
   },
   {
     _id: 10,
     imageURL: { type: String },
-    paragraph: 'You use the half eaten sandwich you found at the corner store to lure the wolf into a vacant room and close the door behind it.  Upon searching the hardware store, you find a crowbar that you think might be useful.  Then you leave the store and head for home.',
+    paragraph: 'You use the half eaten sandwich you found at the corner store to lure the wolf into a vacant room and close the door behind it. Upon searching the hardware store, you find a crowbar that you think might be useful. Then you leave the store and head for home.',
     options: [{ text: "Continue Home", id: "2" }],
     item: "crowbar"
   },
   {
     _id: 11,
     imageURL: { type: String },
-    paragraph: 'You choose the bike. As you ride, the wind on your face feels good. The streets of Chicago are eerily empty. The doors to most buildings are chain or boarded up. However you can hear what sound like gunshots in the distance. Your concern for family grows and you start to pedal faster. Eventually you run into a local hardware store. You\'re not that far from home now.  It\'s door is standing open.  You look into the window and notice a large dark mass moving in the aisles.  It looks to be a massive wolf.  What do you do?',
+    paragraph: 'You choose the bike. As you ride, the wind on your face feels good. The streets of Chicago are eerily empty. The doors to most buildings are chain or boarded up. However you can hear what sound like gunshots in the distance. Your concern for family grows and you start to pedal faster. Eventually you run into a local hardware store. You\'re not that far from home now. It\'s door is standing open. You look into the window and notice a large dark mass moving in the aisles.  It looks to be a massive wolf.  What do you do?',
     options: [{ text: "Confront the Wolf", id: "9" }, { text: "Continue Home", id: "20" }]
   },
   {
-    _id: 11,
+    _id: 12,
     imageURL: { type: String },
     paragraph: 'You choose to take the car. ...',
-    options: [{ text: "...", x }, { text: "...", id: "y" }]
+    options: [{ text: "...", id: 123 }, { text: "...", id: 456 }]
   },
   //arrival at home
   {
     _id: 20,
     imageURL: { type: String },
     paragraph: '',
-    options: [{ text: "...", id: "x" }, { text: "...", id: "y" }]
+    options: [{ text: "...", id: 123 }, { text: "...", id: 456 }]
   },
 ];
 
