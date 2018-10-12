@@ -1,8 +1,6 @@
 import React from "react";
 
-const Image = props => (<div>
-    <img src={props.imgURL} />
-    {props.imgURL}
-</div>);
+const Image = props => (
+    <img src={props.imgURL} />);
 
 export default Image;

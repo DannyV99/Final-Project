@@ -9,7 +9,7 @@ mongoose.connect(
 const pageSeed = [
   {
     _id: 0,
-    imageURL: 'https://www.dropbox.com/s/mev02ahddl1cd0i/image.jpg?dl=0&m=',
+    imageURL: 'https://www.dropbox.com/home/FinalProject?preview=hardwareWolf.jpg',
     paragraph: 'You wake up in a hospital room. You don\'t know why you are here or how you got there. You cannot see anyone – no doctors or nurses. There is no sound of anyone or any activity. On one of the walls is written “you\'re better off in a coma” in what appears to be bodily fluid. You ring for the nurse and no response. You ring again and still no response. You notice that you are no longer connected to any IV and monitors. Their tubes and wires are sprawled out aimlessly. Your clothes and phone are piled on a chair next to you. When you check your phone, the battery is dead. What do you do?',
     options: [{ text: "Explore the Hospital", id: "1" }, { text: "Go Home", id: "6" }]
   },
