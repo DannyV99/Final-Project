@@ -62,9 +62,9 @@ class App extends Component {
         </ItemList>
         {this.state.currentLocation.options && this.state.currentLocation.options.map(option =>
           <Buttons
-            key={option[1]}
-            id={option[1]}
-            buttonText={option[0]}
+            key={option.id}
+            id={option.id}
+            buttonText={option.text}
             handleLocationChange={this.handleLocationChange}
           />
         )};
