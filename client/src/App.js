@@ -9,14 +9,12 @@ import items from "./items.json";
 import API from "./utils/API";
 import pagesmock from "./pagesmock.json";
 import Buttons from "./components/Buttons";
-// import img from "./components/Image/image.jpg";
-
 
 class App extends Component {
   state = {
     items,
     pagesmock,
-    currentLocation: pagesmock[0],
+    currentLocation: {},
   }
 
   handleLocationChange = id => {
@@ -30,8 +28,9 @@ class App extends Component {
   componentDidMount() {
     API.getPage(0)
       .then(res => {
-        this.setState({ currentLocation: res.id })
-        console.log(this.state.currentLocation);
+        console.log("response", res);
+        this.setState({ currentLocation: res.data[0] })
+        console.log(res.data[0]);
       });
   }
 
@@ -57,15 +56,18 @@ class App extends Component {
             />
           ))}
         </ItemList>
-        {console.log(this.state.currentLocation)}
-        {this.state.currentLocation.options.map(option => (
-          <Buttons
-            key={option[1]}
-            buttonText={option[0]}
-            handleLocationChange={() => this.handleLocationChange(option[1])}
-          />
-        ))
-        }
+        {this.state.currentLocation.options && this.state.currentLocation.options.map(option => {
+
+          // console.log(option);
+          return (
+            <Buttons
+              key={option[1]}
+              buttonText={option}
+              handleLocationChange={() => this.handleLocationChange(option[1])}
+            />
+          )
+        })
+        })}
       </div >
     )
   }

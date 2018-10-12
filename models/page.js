@@ -5,7 +5,7 @@ const pageSchema = new Schema({
   _id: { type: Number },
   imageURL: { type: String },
   paragraph: { type: String },
-  options: [{ type: String }]
+  options: [{ text: String, id: Number }]
 });
 
 const Page = mongoose.model("Page", pageSchema);
