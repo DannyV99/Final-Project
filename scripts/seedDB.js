@@ -15,7 +15,7 @@ const pageSeed = [
   },
   {
     _id: 1,
-    imageURL: { type: String },
+    imageURL: { 'https://www.dropbox.com/s/hcdjgu0896r5pjy/hospitalHallway.jpg?dl=0&m='},
     paragraph: 'You choose to explore the hospital so you put on your clothes and proceed to venture down various hallways. You don\'t see anyone. All the rooms are empty. The nurses stations are abandoned and you cannot tell for how long. Even more perplexing is that there is no indication why everyone is gone. You drift into a room labeled pharmacy. The lock on the door has been broken. What must have been shelves full of medications have been ransacked. You notice a single remaining bottle of pills. It is marked as some sort of antibiotic. You absent-mindedly put the pills in you pocket. From behind you, comes a voice. “Are you a doctor?” Then quickly he continues, “You\'re not a doctor. Who are you? Are you a patient?',
     options: [{ text: "Tell the Truth", id: "2" }, { text: "Lie to Him", id: "3" }]
   },
@@ -65,7 +65,7 @@ const pageSeed = [
   },
   {
     _id: 9,
-    imageURL: { type: String },
+    imageURL: { 'https://www.dropbox.com/home/FinalProject?preview=hardwareWolf.jpg'},
     paragraph: 'You choose to confront the rabid, aggressive wolf. That was a bad idea. Your still weak from the coma and wolf viciously disembowels you. The End.',
     options: [{ text: "Next" }]
   },
@@ -78,7 +78,7 @@ const pageSeed = [
   },
   {
     _id: 11,
-    imageURL: { type: String },
+    imageURL: { 'https://www.dropbox.com/home/FinalProject?preview=hardwareWolf.jpg'},
     paragraph: 'You choose the bike. As you ride, the wind on your face feels good. The streets of Chicago are eerily empty. The doors to most buildings are chain or boarded up. However you can hear what sound like gunshots in the distance. Your concern for family grows and you start to pedal faster. Eventually you run into a local hardware store. You\'re not that far from home now. It\'s door is standing open. You look into the window and notice a large dark mass moving in the aisles.  It looks to be a massive wolf.  What do you do?',
     options: [{ text: "Confront the Wolf", id: "9" }, { text: "Continue Home", id: "20" }]
   },
