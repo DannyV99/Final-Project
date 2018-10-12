@@ -9,7 +9,7 @@ mongoose.connect(
 const pageSeed = [
   {
     _id: 0,
-    imageURL: './src/Image/image.jpg',
+    imageURL: 'https://www.dropbox.com/s/mev02ahddl1cd0i/image.jpg?dl=0&m=',
     paragraph: 'You wake up in a hospital room. You don\'t know why you are here or how you got there. You cannot see anyone – no doctors or nurses. There is no sound of anyone or any activity. On one of the walls is written “you\'re better off in a coma” in what appears to be bodily fluid. You ring for the nurse and no response. You ring again and still no response. You notice that you are no longer connected to any IV and monitors. Their tubes and wires are sprawled out aimlessly. Your clothes and phone are piled on a chair next to you. When you check your phone, the battery is dead. What do you do?',
     options: [{ text: "Explore the Hospital", id: "1" }, { text: "Go Home", id: "6" }]
   },
@@ -82,8 +82,9 @@ const pageSeed = [
     paragraph: 'You choose the bike. As you ride, the wind on your face feels good. The streets of Chicago are eerily empty. The doors to most buildings are chain or boarded up. However you can hear what sound like gunshots in the distance. Your concern for family grows and you start to pedal faster. Eventually you run into a local hardware store. You\'re not that far from home now.  It\'s door is standing open.  You look into the window and notice a large dark mass moving in the aisles.  It looks to be a massive wolf.  What do you do?',
     options: [{ text: "Confront the Wolf", id: "9" }, { text: "Continue Home", id: "20" }]
   },
+
   {
-    _id: 11,
+    _id: 12,
     imageURL: { type: String },
     paragraph: 'You choose to take the car. ...',
     options: [{ text: "...", x }, { text: "...", id: "y" }]
