@@ -1,4 +1,5 @@
 import React, { component } from 'react';
+import "./buttons.css";
 
 const wellStyles = { maxWidth: 400, margin: '0 auto 10px' };
 
