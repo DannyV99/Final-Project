@@ -132,6 +132,54 @@ const pageSeed = [
     paragraph: 'Since it\'s the only proof of life you\'ve seen in the neighborhood, you head to your neighbor\'s house. You knock on the door, softly at first but loudly later. “Go away,” comes a voice from behind the door. How do you respond?',
     options: [{ text: "Beg for Help", id: 24 }, { text: "Threaten to Brake In", id: 25 }]
   },
+  {
+    _id: 20,
+    imageURL: { type: String },
+    paragraph: 'You creep around to the back, you hear noise from the backdoor.  You hide and checkout the backdoor. A large man in a hood is attempting to break into your house. What do you do?',
+    options: [{ text: "Continue Hiding", id: 22 }, { text: "Attack the Burglar", id: 23 }]
+  },
+  {
+    _id: 21,
+    imageURL: { type: String },
+    paragraph: 'You take several tries to wedge the crowbar between the door and the door frame. Once in place you smoothly pry open the front door to your home. The noise echoes as you walk in. The room you enter is empty.  No people. No furniture. No anything. You call out, “Hello … hello.” Your voice echoes. No response. You move from room to room. You go upstairs. It\'s all the same. No people. No furniture. Your house is totally empty. What do you do?',
+    options: [{ text: "Go See Your Neighbor", id: 19 }, { text: "Explore the Neighborhood", id: 27 }]
+  },
+  {
+    _id: 22,
+    imageURL: { type: String },
+    paragraph: 'The sight of the looter freezes you in your tracks.  You watch the looter breaks open the backdoor. Your mind starts to be filled of your family. If you do nothing, this looter may attack your family. Your body starts to move without even thinking. You move quickly towards the looter. The looter hears you and turns.  He sees you and pulls his gun. He shoots you dead. The End.',
+    options: [{ text: "Go Again?", id: 0 }]
+  },
+  {
+    _id: 23,
+    imageURL: { type: String },
+    paragraph: 'As the looter continues working on the backdoor, you slowly, stealthily approach him. You sede that the looter has a revolver shoved into his belt.  You grab the gun as the looter pries open the door. The looter turns in surprise and you shoot. Three times and it\'s enough. The looter falls against the door.  The door falls further open and the looter falls to the floor. What do you do?',
+    options: [{ text: "Enter Your Home", id: 20 }, { text: "Go See Your Neighbor", id: 19 }, { text: "Explore the Neighborhood", id: 27 }]
+  },
+  {
+    _id: 24,
+    imageURL: { type: String },
+    paragraph: '“Look I just woke up in the hospital today. I live next door. I just want to get home.” The voice hides behind the door says that all the other houses in the neighborhood are empty. You say my house isn\'t empty. “My wife, my daughter, and I live just next door.” The voice asks, “Is that you Mr. Smith?” The door opens to reveal a woman in her sixties with a shotgun. “Yeah that\'s you, Mr. Smith,” the woman says. “Yeah it\'s me,” you say.     The woman lowers her guard and starts talking to you. She lets you enter her house. She says, “You\'ve been gone a long time Mr. Smith. You were in a coma. Your wife and daughter moved away to God knows where when the flooding, the acid rain, and the gangs got too bad. Everyone\'s moved away.  I\'m too old to move or I\'d move away too.” Chiicago is in chaos.  Your family is gone. What do you do?',
+    options: [{ text: "THE END ...?", id: 0 }]
+  },
+  {
+    _id: 25,
+    imageURL: { type: String },
+    paragraph: 'It\'s been a long day and you\'ve had enough. “You there in the house I\'m getting in no matter what.” “I don\'t know who you are. I\'ve got a shotgun and lots of shells,” the voice replies. You bang on the door. There is no response from inside the house. You notice that the door is made of steel. There\'s no way you would be able to break down this door. “Please let me in,” you shout. Still no response. What do you do?',
+    options: [{ text: "Go to Your Front Door", id: 17 }, { text: "Explore the Neighborhood", id: 27 }]
+  },
+  {
+    _id: 26,
+    imageURL: { type: String },
+    paragraph: 'You walk into the kitchen. The room you enter is empty.  No people. No stove or refrigerator. No anything. You call out, “Hello … hello.” Your voice echoes. No response. You move from room to room. You go upstairs. It\'s all the same. No people. No furniture. Your house is totally empty. What do you do?',
+    options: [{ text: "Go See Your Neighbor", id: 19 }, { text: "Explore the Neighborhood", id: 27 }]
+  },
+  {
+    _id: 27,
+    imageURL: { type: String },
+    paragraph: 'You decide to explore the neighborhood. You walk the streets that you remember but nothings the same. The doors are chained. The windows are boarded up. There is graffiti everywhere. All these houses seem abandoned for years. Periodically you hear gunshots in the distance. Is there any end to this chaos? Where do you go? What do you do? What can you even do?',
+    options: [{ text: "Go Again?", id: 0 }]
+  },
 ];
 
 db.Page
