@@ -66,10 +66,10 @@ class App extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-6">
               <Image imgURL={this.state.currentLocation.imageURL} />
             </div>
-            <div className="col-md-12">
+            <div className="col-md-6">
               <Paragraph>
                 {this.state.currentLocation.paragraph}
               </Paragraph>
