@@ -10,7 +10,7 @@ import Buttons from "./components/Buttons";
 
 class App extends Component {
   state = {
-    items,
+    items: [],
     currentLocation: {},
   }
 
@@ -35,6 +35,11 @@ class App extends Component {
       })
       .catch(err => {
         console.log(err);
+      })
+    API.getItems()
+      .then(res => {
+        console.log("response", res);
+        this.setState({ items: res.data })
       })
   }
 
