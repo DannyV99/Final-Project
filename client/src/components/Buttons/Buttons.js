@@ -5,7 +5,7 @@ const wellStyles = { maxWidth: 400, margin: '0 auto 10px' };
 
 const Buttons = props => (
     <div className="well" style={wellStyles}>
-        <button onClick={() => props.handleLocationChange(props.id)}>
+        <button class="border-button" onClick={() => props.handleLocationChange(props.id)}>
             {props.buttonText}
         </button>
     </div>

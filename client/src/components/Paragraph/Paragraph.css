@@ -3,7 +3,17 @@
     text-align: center;
     font-size: 1.5rem;
     color: rgb(243, 31, 31);
-    /* margin-bottom: 50px; */
     font-family: 'Permanent Marker', cursive;
     float: right;
-  }
+    border-width: medium;
+    border: 2px; 
+    border-style: groove;
+    box-shadow: rgb(53, 50, 50) 5px 9px;
+    animation: border-pulsate 5s infinite;
+}
+  
+@keyframes border-pulsate {
+  0%   { border-color: rgb(2, 2, 2); }
+  50%  { border-color: rgba(155, 150, 150, 0); }
+  100% { border-color: red }
+}
