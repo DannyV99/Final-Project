@@ -5,6 +5,56 @@ mongoose.connect(
   process.env.MONGODB_URI ||
   "mongodb://localhost/escapeChicagoDB"
 );
+const itemSeed = [
+  {
+    _id: "1",
+    name: "Crowbar",
+    img: "https://seiyria.com/gameicons-font/svg/crowbar.svg",
+    desc: "This is a useful tool for entering and combat"
+  },
+  {
+    _id: "2",
+    name: "Food",
+    img: "https://seiyria.com/gameicons-font/svg/food-chain.svg",
+    desc: "It tastes so good, makes you feel better with every bite."
+  },
+  {
+    _id: "3",
+    name: "FirstAid",
+    img: "https://seiyria.com/gameicons-font/svg/health-potion.svg",
+    desc: "It puts the aid on the skin and it gets healthy again."
+  },
+  {
+    _id: "5",
+    name: "Gun",
+    img: "https://seiyria.com/gameicons-font/svg/pistol-gun.svg",
+    desc: "Boom boom baby."
+  },
+  {
+    _id: "6",
+    name: "Knife",
+    img: "https://seiyria.com/gameicons-font/svg/switchblade.svg",
+    desc: "Stick 'em with the pointy end."
+  },
+  {
+    _id: "7",
+    name: "Josephine",
+    img: "https://i.pinimg.com/originals/f5/34/90/f534901a81ee2fc7e31a00bd6cb8e1c7.jpg",
+    desc: "Your neighbor, defintely the more outgoing of the two, friend of your daughters."
+  },
+  {
+    _id: "8",
+    name: "Rusty",
+    img: "https://i.pinimg.com/564x/ba/8e/7c/ba8e7c8f3a59fd3703b3951e5a1a2e15.jpg",
+    desc: "Your neighbor, seemingly nice and steady guy."
+  },
+  {
+    _id: "9",
+    name: "Ginger",
+    img: "http://favim.com/orig/201104/29/Favim.com-28436.jpg",
+    desc: "Your daughter, you worry about her after the loss of her mother, but there is no time to dwell."
+  }
+]
 
 const pageSeed = [
   {
@@ -187,6 +237,18 @@ db.Page
   .then(() => db.Page.collection.insertMany(pageSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+db.Items
+  .deleteMany({})
+  .then(() => db.Items.collection.insertMany(itemSeed))
+  .then(data => {
+    console.log(data.result.n + " record inserted!");
     process.exit(0);
   })
   .catch(err => {
