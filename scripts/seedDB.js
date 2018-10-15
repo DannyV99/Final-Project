@@ -260,6 +260,14 @@ const pageSeed = [
     itemCheck: "false",
     options: [{ text: "Go Again?", id: 0 }]
   },
+  {
+    _id: 28,
+    imageURL: 'https://www.dropbox.com/s/n3kijtclqthih37/hardwareWolf2.jpg?raw=1',
+    paragraph: 'You leave the corner store and resume you journey home. Sporadically you hear gunshots in the distance. You mange to avoid several roving gangs of looters. Eventually you run into a local hardware store. You\'re not that far from home now. It\'s door is standing open. You look into the window and notice a large dark mass moving amongst the aisles. It looks to be a massive wolf. What do you do?',
+    options: [{ text: "Confront the Wolf", id: 9 }, { text: "Lure the Wolf Away", id: 10 }, { text: "Continue Home", id: 15 }],
+    itemCheck: "true",
+    itemId: 2
+  }
 ];
 
 db.Page

@@ -46,7 +46,7 @@ class App extends Component {
   render() {
     return (
       < div >
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
               <Nav>
@@ -71,10 +71,11 @@ class App extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <Image imgURL={this.state.currentLocation.imageURL} />
+              <br />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <Paragraph>
                 {this.state.currentLocation.paragraph}
               </Paragraph>
@@ -82,6 +83,7 @@ class App extends Component {
           </div>
           <div className="row">
             <div className="col-md-12">
+              {console.log(this.state.currentLocation.options)}
               {this.state.currentLocation.options && this.state.currentLocation.options.map(option =>
                 <Buttons
                   key={option.id}
