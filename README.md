@@ -3,7 +3,7 @@
 A game to choose your own adventure
 
 ![running man logo](/client/public/favicon.ico)
-Format: ![Running Man Logo](https://https://github.com/DannyV99/Final-Project/blob/master/client/public/favicon.ico)
+(https://https://github.com/DannyV99/Final-Project/blob/master/client/public/favicon.ico)
 
 ## Live Link 
 
