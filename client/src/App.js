@@ -59,9 +59,10 @@ class App extends Component {
             <div className="col-md-12">
               <ItemList>
                 {this.state.items.map(item => (
-                  <ListItem
-                    key={item.id}
-                    id={item.id}
+                  // console.log(item._id)
+                  < ListItem
+                    key={item._id}
+                    id={item._id.toString()}
                     name={item.name}
                     img={item.img}
                     desc={item.desc}
@@ -92,7 +93,6 @@ class App extends Component {
               )}
             </div>
           </div>
-
         </div>
       </div >
     )
