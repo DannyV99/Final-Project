@@ -1,3 +1,4 @@
 module.exports = {
-  Page: require("./page")
+  Page: require("./page"),
+  Items: require("./items")
 };
