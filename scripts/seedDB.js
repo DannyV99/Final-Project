@@ -54,7 +54,7 @@ const pageSeed = [
     _id: 7,
     imageURL: 'https://www.dropbox.com/s/ujpw1vma4428e9i/corner%20store.jpg?raw=1',
     paragraph: 'You choose to walk home. Even though the world\'s falling apart, you refuse to steal someone else\'s property. You are still don\'t understand what\'s going on but you head east and vaguely north towards your home. The further you walk, you still encounter no people. You see a vacant corner store. It\'s door is hanging open. You go in. There is no shop keeper. This store has been ransacked by looters. All that\'s left are loose scrapes of paper and a half eaten sandwich.  What do you do?',
-    options: [{ text: "Take the Sandwich", id: 8 }, { text: "Skip the Sandwich and Head Home", id: 8 }],
+    options: [{ text: "Take the Sandwich", id: 8 }, { text: "Skip the Sandwich and Head Home", id: 28 }],
     item: "half-eaten sandwich"
   },
   {
@@ -180,6 +180,14 @@ const pageSeed = [
     paragraph: 'You decide to explore the neighborhood. You walk the streets that you remember but nothings the same. The doors are chained. The windows are boarded up. There is graffiti everywhere. All these houses seem abandoned for years. Periodically you hear gunshots in the distance. Is there any end to this chaos? Where do you go? What do you do? What can you even do?',
     options: [{ text: "Go Again?", id: 0 }]
   },
+  {
+    _id: 28,
+    imageURL: 'https://www.dropbox.com/s/n3kijtclqthih37/hardwareWolf2.jpg?raw=1',
+    paragraph: 'You leave the corner store and resume you journey home. Sporadically you hear gunshots in the distance. You mange to avoid several roving gangs of looters. Eventually you run into a local hardware store. You\'re not that far from home now. It\'s door is standing open. You look into the window and notice a large dark mass moving amongst the aisles. It looks to be a massive wolf. What do you do?',
+    options: [{ text: "Confront the Wolf", id: 9 }, { text: "Lure the Wolf Away", id: 10 }, { text: "Continue Home", id: 15 }],
+    itemCheck: "true",
+    itemId: 2
+  }
 ];
 
 db.Page
